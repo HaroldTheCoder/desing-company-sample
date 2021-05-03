@@ -162,10 +162,10 @@ function closeImg() {
  function openNav() {
 	document.querySelector(".mobile-navigation").style.display = "block";
 
-	if (document.getElementById("close").src == "/images/icon-close.svg") {
-		document.getElementById("open").src = "/images/icon-hamburger.svg";
+	if (document.getElementById("close").src == "icon-close.svg") {
+		document.getElementById("open").src = "icon-hamburger.svg";
 	} else {
-		document.getElementById("close").src = "/images/icon-close.svg";
+		document.getElementById("close").src = "icon-close.svg";
 		document.getElementById("close").style.display = "block";
 		document.getElementById("open").style.display = "none";
 	}
