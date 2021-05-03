@@ -1,2 +1,2 @@
 # desing-company-sample
-Design Company Sample (clone-practice)
+Design Company Template - Clone Sample from w3sc for practice purposes
