@@ -114,7 +114,6 @@ hr {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
 }
 .modal-content, #caption {    
     -webkit-animation-name: zoom;
