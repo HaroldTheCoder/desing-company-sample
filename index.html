@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
@@ -56,36 +55,19 @@
             <hr>
 
             <div id="img-container">
-                <img src="kitchenconcrete.jpeg" class="img-showcase img1" onclick="openImg1();" alt="">
-                <img src="atrium.jpg" class="img-showcase img2" onclick="openImg2();" alt="">
-                <img src="livingroom.jpg" class="img-showcase img3" onclick="openImg3();" alt="">
-                <img src="livingroom2.jpg" class="img-showcase img4" onclick="openImg4();" alt="">
-                <img src="diningroom.jpg" class="img-showcase img5" onclick="openImg5();" alt="">
-                <img src="bedroom.jpg" class="img-showcase img6" onclick="openImg6();" alt="">
+                <img src="kitchenconcrete.jpeg" class="img-showcase img1" alt="Concrete meets bricks">
+                <img src="atrium.jpg" class="img-showcase img2" alt="Windows for the atrium">
+                <img src="livingroom.jpg" class="img-showcase img3" alt="Light, white and tight scandinavian design">">
+                <img src="livingroom2.jpg" class="img-showcase img4" alt="Scandinavian design">
+                <img src="diningroom.jpg" class="img-showcase img5" alt="White walls with designer chairs">
+                <img src="bedroom.jpg" class="img-showcase img6" alt="Bedroom and office in one space">
             </div>
 
-            <div id="myModal" class="modal-box" onclick="closeImg();">
-                <span class="close-button" onclick="closeImg();">&times;</span>
-                <img src="kitchenconcrete.jpeg" class="modal-img1 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption1 hidden-caption">Concrete meets bricks</di>
-
-                <img src="atrium.jpg" class="modal-img2 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption2 hidden-caption">Windows for the atrium</div>
-
-                <img src="livingroom.jpg" class="modal-img3 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption3 hidden-caption">Light, white and tight scandinavian design</div>
-
-                <img src="livingroom2.jpg" class="modal-img4 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption4 hidden-caption">Bedroom and office in one space</div>
-
-                <img src="diningroom.jpg" class="modal-img5 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption5 hidden-caption">White walls with designer chairs</div>
-
-                <img src="bedroom.jpg" class="modal-img6 hidden-img" alt="kitchen concrete picture">
-                <div class="img-caption6 hidden-caption">Scandinavia design</div>
-
+            <div class="modal-box" id="myModal" onclick="closeImg1();">
+                <span class="close-button">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
             </div>
-        </div>
 
         <!--SERVICES SECTION-->
         <div id="services-section">
