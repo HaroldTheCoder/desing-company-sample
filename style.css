@@ -110,6 +110,28 @@ hr {
     text-align: center;
     z-index: 1;
 }
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
 .close-button {
     position: absolute;
     top: 3%;
@@ -121,31 +143,15 @@ hr {
     cursor: pointer;
     color: rgb(221, 221, 221);
 } 
-.hidden-caption{display: none;}
-.img-caption1, .img-caption2, .img-caption3, .img-caption4, .img-caption5, .img-caption6{
+#caption{
     padding: 1em;
     color: rgb(255, 255, 255);
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
 }
-.modal-img1, .modal-img2, .modal-img3, .modal-img4, .modal-img5, .modal-img6 {
-    display: none;
-    width: 50%;
-    margin: auto auto auto auto;
-    transition: ease-in 1s;
-    animation-name: fadeIn;
-    animation-duration: 1s;
 
-}
-@keyframes fadeIn {
-    0%{
-        margin-top: auto;
-        width: 20%;
-        opacity: 0.1;
-    }
-    100%{
-        width: 50%;
-    }
-
-}
 /* DESIGNERS STYLE */
 #card-container {
     display: flex;
@@ -272,12 +278,10 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
 
 /* Extra Small devices */
 @media only screen and (max-width: 399px) {
-    body {
-        margin: 0%;
-    }
-    h2 {
-        font-size: 2em;
-    }
+    html {scroll-behavior: auto;}
+    body {margin: 0%;}
+    h2 {font-size: 2em;}
+
     hr {
          width: 10%;
         margin: 2% auto 3% 0%;
@@ -287,6 +291,7 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         float: none;
         width: 100%;
         position: relative;
+        top: 0;
         z-index: 1;
         height: auto;
     }
@@ -353,10 +358,8 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
     }
     .img1{grid-area: img1;}.img2{grid-area: img2;}.img3{grid-area: img3;}
     .img4{grid-area: img4;}.img5{grid-area: img5;}.img6{grid-area: img6;}
-    #card-container {
-    display: block;
-
-    }
+    .modal-content {width: 100%;}
+    #card-container {display: block;}
     .card-tile {
         width: 90%;
         max-width: 100%;
@@ -370,20 +373,13 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         margin: 7% 0% 0% -13%;
         background-color: rgb(241, 241, 241);
     }
-    .fab {
-        
-        font-size: 0.80em;
-    }   
+    .fab {font-size: 0.80em;}   
     #main-footer > p{font-size: 0.70em;}
 }
 /* MEDIA DEVICES /  Small screen - Iphone & others */
 @media only screen and (max-width: 800px) and (min-width: 400px) {
-    body {
-        margin: 0%;
-    }
-    h2 {
-        font-size: 2em;
-    }
+    body {margin: 0%;}
+    h2 {font-size: 2em;}
     hr {
          width: 10%;
         margin: 2% auto 3% 0%;
@@ -393,6 +389,7 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         float: none;
         width: 100%;
         position: relative;
+        top: 0;
         z-index: 1;
         height: auto;
     }
@@ -450,15 +447,16 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
     #img-container {
         display: grid;
         grid-template-areas: "img1 img1"
-                            "img2 img2"
-                            "img3 img3"
-                            "img4 img4"
-                            "img5 img5"
-                            "img6 img6";
+                             "img2 img2"
+                             "img3 img3"
+                             "img4 img4"
+                             "img5 img5"
+                             "img6 img6";
         gap: 1em;
     }
     .img1{grid-area: img1;}.img2{grid-area: img2;}.img3{grid-area: img3;}
     .img4{grid-area: img4;}.img5{grid-area: img5;}.img6{grid-area: img6;}
+    .modal-content {width: 100%;}
     #card-container {
     display: block;
 
@@ -476,9 +474,7 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         margin: 7% 0% 0% -18%;
         background-color: rgb(241, 241, 241);
     }
-    .fab {
-        font-size: 1.10em;
-    }   
+    .fab {font-size: 1.10em;}   
 }
 
 /* LARGE DEVICES */
@@ -488,11 +484,11 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
     #img-container {
         display: grid;
         grid-template-areas: "img1 img1"
-                            "img2 img2"
-                            "img3 img3"
-                            "img4 img4"
-                            "img5 img5"
-                            "img6 img6";
+                             "img2 img2"
+                             "img3 img3"
+                             "img4 img4"
+                             "img5 img5"
+                             "img6 img6";
         gap: 1em;
     }
     .img1{grid-area: img1;}.img2{grid-area: img2;}.img3{grid-area: img3;}
@@ -516,11 +512,6 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
 }
 /* X-LARGE DEVICES */
 @media only screen and (min-width: 1900px) {
-    .form-input {
-    padding: 2em;
-    }
-    #submit {
-
-    padding: 2em;
-}
+    .form-input {padding: 2em;}
+    #submit {padding: 2em;}
 }
