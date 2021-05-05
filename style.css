@@ -284,6 +284,26 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         margin: 2% auto 3% 0%;
         height: 0.40em;
     }
+    .nav-hr {
+        width: 90%;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: auto;
+        height: 0.10em;
+        border: none;
+        background-color: white;
+        animation: hr 1.50s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+}
+    @keyframes hr {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }   
+}
     #side-bar {
         float: none;
         width: 100%;
@@ -392,6 +412,26 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
         margin: 2% auto 3% 0%;
         height: 0.40em;
     }
+    .nav-hr {
+        width: 90%;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: auto;
+        height: 0.10em;
+        border: none;
+        background-color: white;
+        animation: hr 1.50s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+}
+    @keyframes hr {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }   
+}
     #side-bar {
         float: none;
         width: 100%;
