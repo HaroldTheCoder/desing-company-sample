@@ -14,31 +14,38 @@
 <body>
 
     <!--SIDE NAVIGATION-->
-    <nav id="side-bar">
-        <div class="nav-title">
-            <h3>Company<br>Name</h3>
-        </div>
-        <div class="navigation">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#showcase-section" class="nav-link">Showcase</a>
-            <a href="#services-section" class="nav-link">Services</a>
-            <a href="#designers-section" class="nav-link">Designers</a>
-            <a href="#packages-section" class="nav-link">Packages</a>
-            <a href="#contact-section" class="nav-link">Contact</a>
-        </div>
-    <!--MOBILE NAVIGATION-->
-        <div class="nav-title-mobile">
-            <h3>Company Name</h3>
-            <img src="icon-hamburger.svg" id="open" onclick="openNav();" alt="">
-            <img src="icon-close.svg" id="close" onclick="closeNav();" alt="">
-        </div>
-            <div class="mobile-navigation">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#showcase-section" class="nav-link" onclick="closeNav();">Showcase</a>
-            <a href="#services-section" class="nav-link" onclick="closeNav();">Services</a>
-            <a href="#designers-section" class="nav-link" onclick="closeNav();">Designers</a>
-            <a href="#packages-section" class="nav-link" onclick="closeNav();">Packages</a>
-            <a href="#contact-section" class="nav-link" onclick="closeNav();">Contact</a>
+    <nav id="navBar">
+        <div id="side-bar">
+                
+            <!--DESKTOP SIDEBAR-->
+            <div class="nav-title">
+                <h3>Company<br>Name</h3>
+            </div>
+            <div class="navigation">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#showcase-section" class="nav-link">Showcase</a>
+                <a href="#services-section" class="nav-link">Services</a>
+                <a href="#designers-section" class="nav-link">Designers</a>
+                <a href="#packages-section" class="nav-link">Packages</a>
+                <a href="#contact-section" class="nav-link">Contact</a>
+            </div>
+
+            <!--MOBILE NAVBAR-->
+            <div id="mobileNav">
+                <div class="nav-title-mobile">
+                    <h3>Company Name</h3>
+                    <img src="icon-hamburger.svg" id="open" onclick=";openNav();" alt="">
+                    <img src="icon-close.svg" id="close" onclick="closeNav();" alt="">
+                </div>
+                <div class="mobile-navigation">
+                    <a href="#" class="nav-link" onclick="closeNav();">Home</a>
+                    <a href="#showcase-section" class="nav-link" onclick="closeNav();">Showcase</a>
+                    <a href="#services-section" class="nav-link" onclick="closeNav();">Services</a>
+                    <a href="#designers-section" class="nav-link" onclick="closeNav();">Designers</a>
+                    <a href="#packages-section" class="nav-link" onclick="closeNav();">Packages</a>
+                    <a href="#contact-section" class="nav-link" onclick="closeNav();">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
      
