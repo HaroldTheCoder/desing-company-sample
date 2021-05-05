@@ -24,23 +24,22 @@ span.onclick = function() {
 }
 
 
-// OPEN - CLOSE NAVBAR FUNCTION
-
+// OPEN / CLOSE NAVBAR FUNCTION
  function openNav() {
-	document.querySelector('.mobile-navigation').style.display = 'block';
+	document.querySelector(".mobile-navigation").style.display = "block";
 
-	if (document.getElementById("close").src == 'icon-close.svg') {
-		document.getElementById("open").src = 'icon-hamburger.svg';
+	if (document.getElementById("close").src == "icon-close.svg") {
+		document.getElementById("open").src = "icon-hamburger.svg";
 	} else {
-		document.getElementById("close").src = 'icon-close.svg';
-		document.getElementById("close").style.display = 'block';
-		document.getElementById("open").style.display = 'none';
+		document.getElementById("close").src = "icon-close.svg";
+		document.getElementById("close").style.display = "block";
+		document.getElementById("open").style.display = "none";
 	}
 
  }
  function closeNav() {
-	document.querySelector('.mobile-navigation').style.display = 'none';
+	document.querySelector(".mobile-navigation").style.display = "none";
 	
-	document.getElementById('open').style.display = 'block';
-	document.getElementById('close').style.display = 'none';
+	document.getElementById("open").style.display = "block";
+	document.getElementById("close").style.display = "none";
  }
