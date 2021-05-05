@@ -287,11 +287,12 @@ th{padding: 1.50em;}td{ padding: 1.15em; border-bottom: 0.50px solid rgb(223, 22
     #side-bar {
         float: none;
         width: 100%;
-        position: sticky;
+        position: relative;
         top: 0;
         z-index: 1;
         height: auto;
     }
+    #mobileNav { display: block;}
     .navigation {display: none;} .nav-title {display: none;}
     .nav-title-mobile {
         display: block;
