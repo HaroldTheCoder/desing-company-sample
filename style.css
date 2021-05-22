@@ -122,7 +122,7 @@ hr {
     cursor: pointer;
     color: rgb(221, 221, 221);
 } 
-.hidden-caption{display: none;}
+.hidden-caption{display: none; color: rgb(255, 255, 255);}
 .img-caption1, .img-caption2, .img-caption3, .img-caption4, .img-caption5, .img-caption6{
     padding: 1em;
     color: rgb(255, 255, 255);
